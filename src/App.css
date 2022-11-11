@@ -1,0 +1,730 @@
+* {
+  font-family: sans-serif !important;
+}
+p {
+  margin-bottom: 0 !important;
+}
+.Pagecontainer {
+  margin: 0;
+  padding: 0;
+  background: url(/src/assets/background.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.KabrioFontFamily {
+  font-family: "Kabrio", sans-serif !important;
+}
+@keyframes rollout {
+  0% {
+    transform: translateX(-200px);
+  }
+  90% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.mainService {
+  animation: 0.5s rollout;
+}
+.cardHover {
+  filter: blur(0.2px) !important;
+}
+.cardHover:hover {
+  filter: blur(0) !important;
+  transform: scale(1.1) !important;
+  transition: all 0.2s ease-in-out;
+}
+/*
+ carousel
+ */
+
+.carousel-control-next:hover,
+.carousel-control-prev:hover {
+  text-decoration: none;
+  outline: 0;
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.carousel-control-prev {
+  position: absolute;
+  top: 290px;
+  right: 0;
+  bottom: 0;
+  left: 70%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  color: red;
+  text-align: center;
+  background: 0 0;
+  border: 0;
+  opacity: 1;
+  transition: unset;
+}
+.carousel-control-next {
+  position: absolute;
+  top: 290px;
+  right: 0;
+  bottom: 0;
+  left: 78%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  color: red;
+  text-align: center;
+  background: 0 0;
+  border: 0;
+  opacity: 1;
+  transition: unset;
+}
+/* .carousel-control-next-icon {
+  background-image: url(/src/assets/testimonials/nestArrow.png);
+}
+.carousel-control-prev-icon {
+  background-image: url(/src/assets/testimonials/prevArrow.png);
+} */
+.carousel-control-next-icon {
+  display: inline-block;
+  width: 2rem;
+  height: 1.3rem;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 100%;
+}
+.testimonialsMobileAr .carousel-control-prev {
+  right: 42px;
+}
+.carousel-control-prev-icon {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1rem;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 100%;
+}
+/* .testimonialsBackgroundImage {
+  background-image: url("/src/assets/testimonials/TesPic.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+} */
+.carousel-caption {
+  position: relative;
+  right: 0;
+  left: 0;
+  padding: 1rem;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  margin-top: 1rem;
+}
+.carousel-item {
+  border-radius: 40px;
+  height: 250px;
+}
+
+.sliderClass {
+  padding: 3rem 0 !important;
+}
+.blogCarouselCard:hover {
+  transform: scale(1.1) !important;
+  transition: all 0.4s ease-in-out;
+}
+
+.PartnesSliderClass {
+  margin-top: 2rem !important;
+  padding: 3rem 0 !important;
+}
+.sniglePostPostsLinkHover:hover {
+  transform: scale(1.1) !important;
+  border-bottom: 2px solid #dee1e6 !important;
+}
+.directionClass {
+  direction: ltr !important;
+}
+.contactUsSelectArArrow svg {
+  right: 90%;
+}
+.HeroCounter {
+  font-size: 2rem !important;
+  font-weight: bolder;
+}
+.HeroCounterText {
+  font-size: 1.5rem !important;
+  font-weight: bolder;
+}
+.editorClass {
+  border: 1px solid #f1f1f1 !important;
+  padding: 0.5rem !important;
+  height: 100% !important;
+}
+@media screen and (min-width: 1600px) {
+  .AppBarMobile {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .headerContainerBig {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin: 0 auto !important;
+    max-width: 90% !important;
+  }
+  .headerlogoBig {
+    width: 100% !important;
+    height: auto !important;
+  }
+  .headerLinksBig {
+    font-size: 1.8rem !important;
+    margin: 1rem !important;
+  }
+  .headerSignInBig {
+    width: 100% !important;
+  }
+  .headerSignInBig span {
+    font-size: 1.5rem !important;
+  }
+  .heroMobileMainSection {
+    background-position: bottom right !important;
+    padding-bottom: 6rem !important;
+    background-size: contain !important;
+    grid-template-rows: repeat(9, 80px) !important;
+  }
+  .heroMobileMainSectionAr {
+    background-position: bottom left !important;
+    padding-bottom: 6rem !important;
+    background-size: contain !important;
+    grid-template-rows: repeat(9, 80px) !important;
+  }
+  .heroTextBig {
+    font-size: 4rem !important;
+    grid-row-start: 3 !important;
+  }
+  .heroChipBoxBig {
+    grid-row-start: 7 !important;
+  }
+  .heroChipBig {
+    font-size: 2rem !important;
+    padding: 2rem 1.8rem !important;
+  }
+
+  .ServicesMainServiceImg {
+    padding: 1.5rem;
+    max-width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    width: 90% !important;
+    margin: 0 auto !important;
+  }
+  .serviceImage {
+    width: 50% !important;
+  }
+  .carousel-caption {
+    position: absolute;
+    right: 35%;
+    bottom: 1.25rem;
+    left: 25%;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    color: #fff;
+    text-align: center;
+    width: 50%;
+  }
+  .carousel-item {
+    height: 350px;
+  }
+  .carousel-control-prev {
+    top: 380px;
+    left: 73%;
+  }
+  .carousel-control-next {
+    top: 380px;
+    left: 78%;
+  }
+  .carousel-caption {
+    margin-top: 0rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .mobileLoading {
+    width: 100% !important;
+  }
+  /* hero Section */
+  .AppBarMobile {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .css-1lnhmdp-MuiTypography-root {
+    grid-column-end: 8 !important;
+  }
+  .heroChipBig {
+    font-size: 16px !important;
+  }
+  .heroSocialMobile {
+    grid-column-end: 7 !important;
+  }
+  .heroMobileMainSection,
+  .heroMobileMainSectionAr {
+    grid-column-start: 1 !important;
+    grid-column-end: 13 !important;
+    padding-bottom: 3rem !important;
+    background-size: 50% !important;
+  }
+  .heroInstaMobile {
+    margin: 0 1rem !important;
+  }
+  .heroTwitterMobile {
+    margin: 0 1rem 0 0 !important;
+  }
+  .HeroCounter1Mobile {
+    grid-column-start: 2 !important;
+    grid-column-end: 6 !important;
+    justify-self: center !important;
+    width: 100%;
+  }
+  .HeroCounter2Mobile {
+    grid-row-start: 5 !important;
+    grid-column-start: 2 !important;
+    grid-column-end: 6 !important;
+    justify-self: center !important;
+    width: 100%;
+  }
+  .HeroSlogan {
+    align-self: center !important;
+    grid-column-end: 7 !important;
+  }
+  .heroChipBoxBig {
+    grid-column-end: 7 !important;
+    align-self: center !important;
+  }
+  .HeroCounter {
+    font-size: 1rem !important;
+  }
+  .HeroCounterText {
+    font-size: 1.2rem !important;
+  }
+  /* about us section */
+  .aboutUsMobile {
+    width: 90% !important;
+    padding: 0 1rem !important;
+  }
+  /* our mission */
+  .ourMissionMobile {
+    width: 90% !important;
+    padding: 0 1rem !important;
+  }
+  /* follow us */
+  .followUsMobile {
+    grid-column-start: 1 !important;
+    grid-column-end: 13 !important;
+    margin: 0 auto !important;
+  }
+  .sociaMediaIcons {
+    grid-column-start: 1 !important;
+    grid-column-end: 13 !important;
+    margin: 0 auto !important;
+    margin-top: 1rem !important ;
+  }
+  /* AVI Video */
+  .aviVideoMobile {
+    grid-column-start: 1 !important;
+    grid-column-end: 13 !important;
+  }
+  /* services */
+  .servicesMobile {
+    grid-column-start: 2 !important;
+    grid-column-end: 12 !important;
+    margin: 0 auto !important;
+  }
+  .SingleServicesMobile {
+    font-size: 1.3rem !important;
+  }
+  .servicesContainer {
+    grid-column-start: 1 !important;
+    grid-column-end: 13 !important;
+  }
+  .ServicesMainServiceImgContainerMobile {
+    position: relative !important;
+    grid-column-start: 1 !important;
+    grid-column-end: 13 !important;
+  }
+  .ServicesMainServiceImg {
+    grid-row-start: 1 !important;
+    margin: 0 auto !important;
+    width: 80% !important;
+  }
+  .mainService {
+    grid-auto-rows: unset !important;
+  }
+  .ServicesMainServiceText {
+    grid-column-start: 1 !important;
+    grid-column-end: 13 !important;
+    grid-row-start: 2 !important;
+    padding: 1rem !important;
+    text-align: justify !important;
+  }
+  .mainServiceDiscription {
+    font-size: 0.8rem !important;
+    padding: 1rem 0 !important;
+  }
+  .servicesCardsContainer {
+    grid-column-start: 2 !important;
+    grid-column-end: 12 !important;
+    grid-row-start: 3 !important;
+    grid-auto-columns: 1fr !important;
+    column-gap: 0 !important;
+  }
+  .singleServiceContainerMobile {
+    row-gap: 2rem;
+    margin: 2rem 0 !important;
+  }
+  .serviceCardMobile {
+    position: relative !important;
+    grid-column: span 8 !important;
+    height: auto !important;
+    grid-auto-columns: 1fr !important;
+    width: 100% !important;
+  }
+
+  .serviceImage {
+    width: 100% !important;
+  }
+  /* partners */
+  .PartnesContainerCarouselClass Button {
+    display: none !important;
+  }
+  .partnersTextMobile {
+    padding: 0 0.7rem !important;
+  }
+  /* blogs */
+  .BlogsContainerCarouselClass Button {
+    display: none !important;
+  }
+  .blogsTextMobile {
+    padding: 0 0.7rem !important;
+  }
+  /* Testimonials */
+  .testimonialsMobile {
+    margin-top: 3rem !important;
+    grid-column-start: 2 !important;
+    grid-column-end: 12 !important;
+  }
+  .carousel-item {
+    border-radius: 40px;
+    height: 350px;
+  }
+  /*  .testimonialsBackgroundImage {
+    background-image: url("/src/assets/testimonials/tesPicMobile.png");
+  } */
+  .carousel-caption {
+    position: relative;
+    right: 0;
+    left: 0;
+    padding: 3rem 1rem;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+  }
+  .carousel-control-prev {
+    top: 380px !important;
+    left: 65% !important;
+  }
+  .carousel-control-next {
+    top: 380px !important;
+    left: 78% !important;
+  }
+  /* contact us */
+  .contactUsImageMobile {
+    display: none;
+  }
+  .contactUsFormControlMobile {
+    margin-top: 1rem !important;
+    grid-column-start: 2 !important;
+    grid-column-end: 11 !important;
+  }
+  .contactUsIconsContainerMobile {
+    margin-top: 4rem;
+    grid-column-start: 1 !important;
+    grid-column-end: 12 !important;
+  }
+  .contactUsIconsMobile {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+  .contactUsLocationMobile {
+    max-width: 100% !important;
+  }
+  .contactUsPhoneMobile {
+    margin: 2rem 0 !important;
+  }
+  /* newsLetter */
+  .newsletterTextMobile {
+    grid-column-start: 2 !important;
+    grid-column-end: 12 !important;
+    font-size: 1rem !important;
+    margin-bottom: 2rem !important;
+  }
+  .newsletterInputMobile {
+    grid-column-start: 2 !important;
+    grid-column-end: 12 !important;
+  }
+  /* footer */
+  .footerLogoMobile {
+    margin: 0 auto !important;
+    grid-column-start: 1 !important;
+    grid-column-end: 13 !important;
+  }
+  .footerLogoMobile img {
+    width: 200px !important;
+  }
+  .footerInformationMobile {
+    grid-column-start: 1 !important;
+    grid-column-end: 13 !important;
+  }
+  .footerFollowUsMobile {
+    grid-column-start: 1 !important;
+    grid-column-end: 13 !important;
+    grid-auto-rows: unset !important;
+  }
+  .footerFollowUsMobile div {
+    margin: 0.5rem 0 !important;
+  }
+  .footerIconsContainerMobile {
+    display: flex !important;
+    justify-content: center;
+  }
+  .allRightsMobile {
+    font-size: 0.7rem !important;
+  }
+  .mobileMarginLR {
+    margin: 0 2rem !important;
+  }
+  /* singlePost Page */
+  .blogCardMobile {
+    grid-column-start: 1 !important;
+    grid-column-end: 13 !important;
+  }
+  .blogCardContentMobile {
+    padding: 2rem 1rem !important;
+  }
+  .blogCardContentIconsMobile {
+    grid-column-start: 1 !important;
+    grid-column-end: 13 !important;
+  }
+  .blogCardActionMobile {
+    margin: 1rem !important;
+  }
+  .sideBlogsMobile {
+    margin-top: 4rem !important;
+    grid-column-start: 2 !important;
+    grid-column-end: 12 !important;
+  }
+  .BlogPageHeaderMobile {
+    flex-direction: column !important;
+    text-align: center;
+  }
+  .BlogsPageBlogsContainerMobile {
+    column-gap: 0 !important;
+    row-gap: 2rem !important;
+  }
+  .BlogsPageCardMobile {
+    grid-column-start: 1 !important;
+    grid-column-end: 13 !important;
+  }
+  .FooterBoxServicePage {
+    position: relative !important;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 950px) {
+  /* Hero */
+  .HeroCounter1Mobile {
+    grid-column-start: 2 !important;
+    grid-column-end: 5 !important;
+    justify-self: center !important;
+    width: 100%;
+  }
+  .HeroCounter2Mobile {
+    grid-row-start: 6 !important;
+    grid-column-start: 2 !important;
+    grid-column-end: 5 !important;
+    justify-self: center !important;
+    width: 100%;
+  }
+  .heroChipBoxBig {
+    grid-column-end: 7 !important;
+  }
+  .HeroCounter {
+    font-size: 1rem !important;
+  }
+  .HeroCounterText {
+    font-size: 1.2rem !important;
+  }
+  /* Services */
+  .servicesMobile {
+    grid-column-start: 2 !important;
+    grid-column-end: 12 !important;
+    margin: 0 auto !important;
+  }
+  .servicesContainer {
+    grid-column-start: 1 !important;
+    grid-column-end: 13 !important;
+  }
+  .ServicesMainServiceImg {
+    grid-column-start: 1 !important;
+    grid-column-end: 4 !important;
+    margin: auto auto !important;
+  }
+  .ServicesMainServiceText {
+    grid-column-start: 4 !important;
+    grid-column-end: 13 !important;
+  }
+
+  .serviceCardMobile {
+    position: relative !important;
+    grid-column: span 4 !important;
+    height: auto !important;
+    grid-auto-columns: 1fr !important;
+    width: 100% !important;
+  }
+  .serviceImage {
+    width: 50% !important;
+  }
+  .singleServiceContainerMobile {
+    row-gap: 2rem;
+    column-gap: 4rem;
+    margin: 2rem 0 !important;
+  }
+  /* follow us */
+  .followUsMobile {
+    grid-column-start: 1 !important;
+    grid-column-end: 13 !important;
+    margin: 0 auto !important;
+  }
+  .sociaMediaIcons {
+    grid-column-start: 1 !important;
+    grid-column-end: 13 !important;
+    margin: 0 auto !important;
+    margin-top: 1rem !important ;
+  }
+  /* testomonials */
+  .carousel-item {
+    margin-top: 1rem !important;
+  }
+  /* contact us */
+  .contactUsImageMobile {
+    display: none;
+  }
+  .contactUsFormControlMobile {
+    grid-column-start: 3 !important;
+    grid-column-end: 11 !important;
+  }
+  .contactUsIconsContainerMobile {
+    margin-top: 4rem;
+    grid-column-start: 2 !important;
+    grid-column-end: 12 !important;
+  }
+  .contactUsIconsMobile {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+  .contactUsLocationMobile {
+    max-width: 100% !important;
+  }
+  .contactUsPhoneMobile {
+    margin: 2rem 0 !important;
+  }
+  .footerInformationMobile {
+    grid-column-end: 5 !important;
+  }
+}
+@media screen and (pointer: none) and (max-width: 950px) and (orientation: landscape) {
+  /* Hero */
+  .HeroCounter1Mobile {
+    grid-column-start: 2 !important;
+    grid-column-end: 5 !important;
+    justify-self: center !important;
+    width: 100%;
+  }
+  .HeroCounter2Mobile {
+    grid-row-start: 6 !important;
+    grid-column-start: 2 !important;
+    grid-column-end: 5 !important;
+    justify-self: center !important;
+    width: 100%;
+  }
+  .heroChipBoxBig {
+    grid-column-end: 7 !important;
+  }
+  .HeroCounter {
+    font-size: 1rem !important;
+  }
+  .HeroCounterText {
+    font-size: 1.2rem !important;
+  }
+
+  /* services */
+  .ServicesMainServiceImg {
+    grid-column-start: 1 !important;
+    grid-column-end: 4 !important;
+    margin: auto auto !important;
+  }
+  .ServicesMainServiceText {
+    grid-column-start: 4 !important;
+    grid-column-end: 13 !important;
+  }
+
+  .serviceCardMobile {
+    position: relative !important;
+    grid-column: span 4 !important;
+    height: auto !important;
+    grid-auto-columns: 1fr !important;
+    width: 100% !important;
+  }
+  .serviceImage {
+    width: 50% !important;
+  }
+  /* follow us */
+  .mainService {
+    grid-column-start: 1 !important;
+    grid-column-end: 13 !important;
+  }
+  .followUsMobile {
+    grid-column-start: 2 !important;
+    grid-column-end: 6 !important;
+  }
+  .sociaMediaIcons {
+    grid-column-start: 7 !important;
+    grid-column-end: 11 !important;
+  }
+  /* testomonials */
+  .carousel-item {
+    margin-top: 1rem !important;
+  }
+  /* contact us */
+  .contactUsImageMobile {
+    display: none;
+  }
+  .contactUsFormControlMobile {
+    grid-column-start: 3 !important;
+    grid-column-end: 11 !important;
+  }
+  .contactUsIconsContainerMobile {
+    margin-top: 4rem;
+    grid-column-start: 2 !important;
+    grid-column-end: 12 !important;
+  }
+  .contactUsIconsMobile {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+  .contactUsLocationMobile {
+    max-width: 100% !important;
+  }
+  .contactUsPhoneMobile {
+    margin: 2rem 0 !important;
+  }
+}
